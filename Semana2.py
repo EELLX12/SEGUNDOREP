@@ -10,6 +10,6 @@ st.write("phyton es un")
 st.header("ejemplo 1: enteros")
 st.write(" en phyton un entero")
 
-#definir una vaZ
-int_variable = 42
+#imput paraque el usuario ingrese dato de preferencia entero
+int_variable = st.number_input("ingrese  un entero")
 st.code(f" int_variable = {int_variable}# tipo {type(int_variable)}")
