@@ -13,12 +13,8 @@ def generar_serie(n):
     return serie
 
 
-#Función para validar y calcular la suma
-def calcular_suma(n):
-    serie = generar_serie(n)
-    suma = sum(serie)
-    return suma, serie
+
 n = st.number_input("ingresa el valor de n:", min_value=1, step=1)
-suma,serie = calcular_suma(n)
+
 st.write(f"La serie generada para n={n} es: {serie}")
 st.write(f"La suma de los primeros {n} elementos es: {suma}")
