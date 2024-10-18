@@ -5,11 +5,11 @@ st.title("SESION 12 Estructura repetitiva")
 st.subheader("Ejercicio 4 : suma  de n numeros elevados a la n")
 def generar_serie(n):
     serie = []
-    i=1
     for i in range(n):
-        serie.append(i^i)
-        i+=1
-        st.write(i)
+        a=i+1
+        serie.append(a^a)
+        st.write(serie[i])
+        st.write(a)
     return serie
 
 
