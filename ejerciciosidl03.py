@@ -49,5 +49,5 @@ def hallarmenor():
             menor = min(numeros)
             st.success(f"El menor número ingresado es: {menor}")
 
-if __name__ == "__llarmenor__":
+if __name__ == "__hallarmenor__":
     main()
