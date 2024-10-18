@@ -49,5 +49,5 @@ def main():
             menor = min(numeros)
             st.success(f"El menor número ingresado es: {menor}")
 
-if __name__ == "__main__":
+
     main()
