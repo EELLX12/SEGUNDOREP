@@ -11,7 +11,8 @@ def generar_serie(n):
         i+=1
         st.write(i)
     return serie
-st.write(serie) 
+
+st.write(serie[2]) 
 
 #Función para validar y calcular la suma
 def calcular_suma_serie(n):
