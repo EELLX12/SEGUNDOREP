@@ -57,17 +57,29 @@ import numpy as np
 #Ejercicio 1:  De una lista de 10 números calcular la media y determinar cuántos son mayores que 10, cuantos son iguales y cuántos son menores..
 st.title("SESION 12 Estructura repetitiva")
 st.subheader("Ejercicio 1 : Calcular de 10 números la media, calcular cuantos son >10 =10 y <10 ")
-# Funcion para encontrar menor
-def hallarmed():
-    # Crear un formulario para ingresar los números
+
+# Crear un formulario para ingresar los números
+
+def calcular():
     n=10
     dieznumeros = []
+    contar1=0
+    contar2=0
+    contar3=0
     for i in range(n):
         num = st.number_input(f"Ingrese el número {i + 1}:", key=f"num_{i}")
         dieznumeros.append(num)
-        media =np.mean(dieznumeros)
-    return media
+    media = np.media(dieznumeros)
+    if num >10:
+        contar1+=1
+    elif num ==10:
+        contar2+=1
+    else:
+        contar3+=1
+    return media,contar1, contar2, contar3       
 if st.button("Calcular"):
-    media = hallarmed()
+    media,contar1, contar2, contar3 =calcular()
     st.write(f"La media para 10 numeros es= {media} ")
-    
+    st.write(f"La cantidad de numeros mayores de 10 son = {contar1} ")
+    st.write(f"La cantidad de numeros iguales de 10 son ={contar2} ")
+    st.write(f"La cantidad de numeros menores de 10 son = {contar3} ")
