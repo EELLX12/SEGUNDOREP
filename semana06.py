@@ -35,7 +35,8 @@ def generar_serie(n):
     serie = []
     elementos = [1, 5, 3, 7, 5, 9, 7] 
     for i in range(n):
-        serie.append(elementos[i])
+        serie.append(elementos[i% len(elementos)]])
+        st.write(elementos[i])
     return serie
 
 #Función para validar y calcular la suma
