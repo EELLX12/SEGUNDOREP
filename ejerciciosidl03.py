@@ -65,18 +65,16 @@ def calcular():
     contar1=0
     contar2=0
     contar3=0
-    media = np.mean(dieznumeros)
     for i in range(10):
         num = st.number_input(f"Ingrese el número {i + 1}:", key=f"num_{i}")
         dieznumeros.append(num)
-
-    for i in range (10):
         if dieznumeros[i]>10:
             contar1+=1
         elif dieznumeros[i] ==10:
             contar2+=1
         else:
             contar3+=1
+    media = np.mean(dieznumeros)
     return media,contar1, contar2, contar3       
 if st.button("Calcular"):
     media,contar1, contar2, contar3 =calcular()
