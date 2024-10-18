@@ -10,6 +10,7 @@ def generar_serie(n):
         serie.append(a^a)
         st.write(serie[i])
         st.write(a)
+        i+=i
     return serie
 
 
