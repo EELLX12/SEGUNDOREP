@@ -6,7 +6,7 @@ st.subheader("Ejercicio 4 : suma  de n numeros elevados a la n")
 def generar_serie(n):
     serie = []
     for i in range(n):
-        serie.append(i^i)
+        serie.append(i)
     return serie
 
 #Función para validar y calcular la suma
