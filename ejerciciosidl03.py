@@ -51,3 +51,23 @@ def hallarmenor():
 
 if __name__ == "__main__":
     hallarmenor()
+st.write("##############################################################################################")
+import streamlit as st
+import numpy as np
+#Ejercicio 1:  De una lista de 10 números calcular la media y determinar cuántos son mayores que 10, cuantos son iguales y cuántos son menores..
+st.title("SESION 12 Estructura repetitiva")
+st.subheader("Ejercicio 1 : Calcular de 10 números la media, calcular cuantos son >10 =10 y <10 ")
+# Funcion para encontrar menor
+def hallarmed():
+    # Crear un formulario para ingresar los números
+    n=10
+    dieznumeros = []
+    for i in range(n):
+        num = st.number_input(f"Ingrese el número {i + 1}:", key=f"num_{i}")
+        dieznumeros.append(num)
+        media =np.mean(dieznumeros)
+    return media
+if st.button("Calcular"):
+    media = hallarmed()
+    st.write(f"La media para 10 numeros es= {media} ")
+    
