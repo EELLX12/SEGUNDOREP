@@ -77,7 +77,7 @@ for i in range(10):
         contar3+=1
 media = np.mean(dieznumeros)
          
-if submit_button("Calcular"):
+if submit_button():
     st.write(f"La media para 10 numeros es= {media} ")
     st.write(f"La cantidad de numeros mayores de 10 son = {contar1} ")
     st.write(f"La cantidad de numeros iguales de 10 son ={contar2} ")
