@@ -65,7 +65,7 @@ def calcular():
     contar1=0
     contar2=0
     contar3=0
-    media = np.media(dieznumeros)
+    media = np.mean(dieznumeros)
     for i in range (10):
         if dieznumeros[i]>10:
             contar1+=1
