@@ -37,8 +37,9 @@ st.subheader("Ejercicio 3 : Calcular el número mayor de una lista de N números
 n = st.number_input("cuantos numeros va ingresar n:", min_value=1, step=1)
 numeros=[]
 i=0
-while i<n:
-    b = input("Ingrese el  numero  :")
-    numeros.append(b)
-    i+=i
+if st.button():
+    while i<n:
+        b = input("Ingrese el  numero  :")
+        numeros.append(b)
+        i+=i
     
