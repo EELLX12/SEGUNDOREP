@@ -4,7 +4,7 @@ import streamlit as st
 st.title("SESION 12 Estructura repetitiva")
 st.subheader("Ejercicio 4 : suma  de n numeros elevados a la n")
 def generar_serie(n):
-    serie = []
+    serie = [1,2]
     for i in range(n):
         a=i+1
         serie.append(a^a)
