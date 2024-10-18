@@ -9,7 +9,7 @@ def generar_serie(n):
     serie = []
     for i in range(n):
         serie.append(i^i)
-        serie
+       
     return serie
 
 #Función para validar y calcular la suma
