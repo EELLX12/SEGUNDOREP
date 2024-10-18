@@ -111,3 +111,50 @@ if st.button("Calcular"):
     st.write(f"La cantidad de numeros mayores de 10 son = {contar1} ")
     st.write(f"La cantidad de numeros iguales de 10 son ={contar2} ")
     st.write(f"La cantidad de numeros menores de 10 son = {contar3} ")
+
+st.write("##############################################################################################")
+import streamlit as st
+import numpy as np
+#Ejercicio 3:  CREA UN MENU
+st.title("SESION 13 Estructura repetitiva")
+st.subheader("Ejercicio 3 : GENERA UN MENU ")
+# Crear un menú en la barra lateral
+menu = st.sidebar.selectbox("Menú", ["Archivo", "Editar", "Ver", "Salir"])
+
+# Mostrar el contenido según la opción seleccionada
+if menu == "Archivo":
+    st.write("Has seleccionado la opción 'Archivo'. Aquí puedes manejar archivos.")
+    # Opciones específicas para 'Archivo'
+    archivo_opcion = st.selectbox("Opciones de Archivo", ["Abrir", "Guardar", "Cerrar"])
+    if archivo_opcion == "Abrir":
+        st.write("Abrir archivo seleccionado.")
+    elif archivo_opcion == "Guardar":
+        st.write("Guardar archivo seleccionado.")
+    elif archivo_opcion == "Cerrar":
+        st.write("Cerrar archivo seleccionado.")
+
+elif menu == "Editar":
+    st.write("Has seleccionado la opción 'Editar'.")
+    # Opciones específicas para 'Editar'
+    editar_opcion = st.selectbox("Opciones de Edición", ["Cortar", "Copiar", "Pegar"])
+    if editar_opcion == "Cortar":
+        st.write("Cortar seleccionado.")
+    elif editar_opcion == "Copiar":
+        st.write("Copiar seleccionado.")
+    elif editar_opcion == "Pegar":
+        st.write("Pegar seleccionado.")
+
+elif menu == "Ver":
+    st.write("Has seleccionado la opción 'Ver'.")
+    # Opciones específicas para 'Ver'
+    ver_opcion = st.selectbox("Opciones de Vista", ["Zoom In", "Zoom Out", "Pantalla Completa"])
+    if ver_opcion == "Zoom In":
+        st.write("Zoom In seleccionado.")
+    elif ver_opcion == "Zoom Out":
+        st.write("Zoom Out seleccionado.")
+    elif ver_opcion == "Pantalla Completa":
+        st.write("Pantalla Completa seleccionado.")
+
+elif menu == "Salir":
+    st.write("Has seleccionado 'Salir'. Gracias por utilizar la aplicación.")
+    # Aquí puedes poner una acción para cerrar o reiniciar la app (si fuera posible en Streamlit).
