@@ -112,27 +112,7 @@ if st.button("Calcular"):
     st.write(f"La cantidad de numeros iguales de 10 son ={contar2} ")
     st.write(f"La cantidad de numeros menores de 10 son = {contar3} ")
 
-st.write("##############################################################################################")
-import streamlit as st
-import numpy as np
-#Ejercicio 3:  CREA UN MENU
-st.title("SESION 13 Estructura repetitiva")
-st.subheader("Ejercicio 3 : GENERA UN MENU ")
-# Crear un menú en la barra lateral
-menu = st.sidebar.selectbox("Menú", ["Archivo", "Editar", "Ver", "Salir"])
 
-# Mostrar el contenido según la opción seleccionada
-if menu == "Archivo":
-    st.write("Has seleccionado la opción 'Archivo'. Aquí puedes manejar archivos.")
-        
-elif menu == "Editar":
-    st.write("Has seleccionado la opción 'Editar'.")
-    
-elif menu == "Ver":
-    st.write("Has seleccionado la opción 'Ver'.")
-    
-elif menu == "Salir":
-    st.write("Has seleccionado 'Salir'. Gracias por utilizar la aplicación.")
     
 st.write("##############################################################################################")
 import streamlit as st
