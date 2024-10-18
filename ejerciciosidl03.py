@@ -18,18 +18,7 @@ def calcular_suma_serie(n):
         serie = generar_serie(n)
         suma = sum(serie)
     return suma, serie
-st.markdown("""
-<style>
-div.stButton > button{
-background-color: blue;
-color: white;
-font-size: 20px;
-padding; 10px;
-border-radius: 112px;
-border: none;
-}
-</style>
-""", unsafe_allow_html=True)
+
 #Ingresa el valor de n
 n = st.number_input("ingresa el valor de n:", min_value=1, step=1)
 serie = generar_serie(n)
