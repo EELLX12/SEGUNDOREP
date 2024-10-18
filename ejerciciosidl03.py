@@ -68,6 +68,7 @@ def calcular():
     for i in range(10):
         num = st.number_input(f"Ingrese el número {i + 1}:", key=f"num_{i}")
         dieznumeros.append(num)
+    for i in range(10):
         if dieznumeros[i]>10:
             contar1+=1
         elif dieznumeros[i] ==10:
