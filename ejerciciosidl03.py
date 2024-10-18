@@ -1,4 +1,4 @@
-import streamlit as ste
+import streamlit as st
 
 #Ejercicio 4:  calcular la suma  de n numeros elevados a la n
 st.title("SESION 12 Estructura repetitiva")
@@ -6,7 +6,7 @@ st.subheader("Ejercicio 4 : suma  de n numeros elevados a la n")
 def generar_serie(n):
     serie = []
     for i in range(n):
-        serie.append(i)
+        serie.append(i@i)
     return serie
 
 #Función para validar y calcular la suma
