@@ -20,4 +20,4 @@ st.write(f"La serie generada para n={n} es: {serie}")
 lst = [10,20,30,40] 
 x = [0,1,2] 
 lst.append(x) 
-print(lst) 
+st.write(lst) 
