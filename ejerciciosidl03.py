@@ -7,7 +7,8 @@ def generar_serie(n):
     serie = [1,2]
     for i in range(n):
         a=i+1
-        serie.append(a^a)
+        b= a^a
+        serie.append(b)
         st.write(serie[i])
         st.write(a)
         
