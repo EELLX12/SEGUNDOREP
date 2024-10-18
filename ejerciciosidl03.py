@@ -133,7 +133,7 @@ elif menu == "Ver":
     
 elif menu == "Salir":
     st.write("Has seleccionado 'Salir'. Gracias por utilizar la aplicación.")
-menu = st.sidebar.selectbox("Menú", ["Archivo", "Editar", "Ver", "Salir"])    
+    
 st.write("##############################################################################################")
 import streamlit as st
 import numpy as np
