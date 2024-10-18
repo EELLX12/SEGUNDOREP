@@ -15,8 +15,8 @@ def generar_serie(n):
 def calcular_suma_serie(n):
     if n <= 0:
         return "El valor de n debe de ser mayor que 0"
-        serie = generar_serie(n)
-        suma = sum(serie)
+    serie = generar_serie(n)
+    suma = sum(serie)
     return suma, serie
 
 #Ingresa el valor de n
