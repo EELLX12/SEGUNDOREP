@@ -61,11 +61,15 @@ st.subheader("Ejercicio 1 : Calcular de 10 números la media, calcular cuantos s
 # Crear un formulario para ingresar los números
 
 def calcular():
-    dieznumeros = [5,8,20,35,88,45,78,89,75,10]
+    dieznumeros = []
     contar1=0
     contar2=0
     contar3=0
     media = np.mean(dieznumeros)
+    for i in range(10):
+        num = st.number_input(f"Ingrese el número {i + 1}:", key=f"num_{i}")
+        dieznumeros.append(num)
+
     for i in range (10):
         if dieznumeros[i]>10:
             contar1+=1
