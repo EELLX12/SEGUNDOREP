@@ -61,7 +61,7 @@ st.subheader("Ejercicio 1 : Calcular de 10 números la media, calcular cuantos s
 # Crear un formulario para ingresar los números
 
 
-def calcular(s):
+def calcular():
     dieznumeros = [87,45,97,10,10,25,87,-6,-3,0]
     contar1=0
     contar2=0
