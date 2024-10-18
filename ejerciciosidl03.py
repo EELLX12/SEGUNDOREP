@@ -38,7 +38,7 @@ n = st.number_input("cuantos numeros va ingresar n:", min_value=1, step=1)
 numeros=[]
 i=0
 while i<n:
-    b = st.number_input(f"Ingrese el  numero {i+1} :")
+    b = input(f"Ingrese el  numero {i+1} :")
     numeros.append(b)
     i+=i
     
