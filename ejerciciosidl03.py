@@ -52,9 +52,8 @@ def encontrar_menor():
     menor = min(numeros)
 
     # Mostrar el resultado
-    
+    print(f"El menor número ingresado es: {menor}")
     return menor
 
 # Llamar a la función
-elmenos=encontrar_menor()
-print(f"El menor número ingresado es: {elmenos}")
+encontrar_menor()
