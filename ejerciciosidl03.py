@@ -17,3 +17,7 @@ n = st.number_input("ingresa el valor de n:", min_value=1, step=1)
 serie = generar_serie(n)
 st.write(f"La serie generada para n={n} es: {serie}")
 
+lst = [10,20,30,40] 
+x = [0,1,2] 
+lst.append(x) 
+print(lst) 
