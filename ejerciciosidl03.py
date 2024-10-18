@@ -27,3 +27,16 @@ if st.button("Calcular suma"):
     suma,serie = calcular_suma_serie(n)
     st.write(f"La serie generada para n={n} es: {serie}")
     st.write(f"La suma de los primeros {n} elementos es: {suma}")
+
+st.write("##############################################################################################")
+
+#Ejercicio 3:  Calcular el número mayor de una lista de N números dados.
+st.title("SESION 12 Estructura repetitiva")
+st.subheader("Ejercicio 3 : Calcular el número mayor de una lista de N números dados")
+#Ingresar cantidad de numeros a ingresar:
+n = st.number_input("cuantos numeros va ingresar n:")
+numeros=[]
+    for i in range(n):
+        b = st.number_input(f"Ingrese el  numero {i+1} :")
+        numeros.append(b)
+    
