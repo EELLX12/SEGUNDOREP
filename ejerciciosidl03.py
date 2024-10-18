@@ -34,26 +34,20 @@ st.write("######################################################################
 st.title("SESION 12 Estructura repetitiva")
 st.subheader("Ejercicio 3 : Calcular el número mayor de una lista de N números dados")
 # Funcion para encontrar menor
-def encontrar_menor():
-    # Pedir al usuario la cantidad de números
-    n = int(input("¿Cuántos números deseas ingresar? "))
-    if n <= 0:
-        print("Debes ingresar un número positivo.")
-        return
-    # Inicializar la lista para almacenar los números
-    numeros = []
+def main():
+    # Ingresar la cantidad de números
+    n = st.number_input("¿Cuántos números deseas ingresar?", min_value=1, value=1)
 
-    # Ingresar los números
+    # Crear un formulario para ingresar los números
+    numeros = []
     for i in range(n):
-        num = float(input(f"Ingrese el número {i + 1}: "))
+        num = st.number_input(f"Ingrese el número {i + 1}:", key=f"num_{i}")
         numeros.append(num)
 
-    # Encontrar el menor número
-    menor = min(numeros)
+    if st.button("Hallara el Menor"):
+        if numeros:
+            menor = min(numeros)
+            st.success(f"El menor número ingresado es: {menor}")
 
-    # Mostrar el resultado
-    print(f"El menor número ingresado es: {menor}")
-    return menor
-
-# Llamar a la función
-encontrar_menor()
+if __name__ == "__main__":
+    main()
