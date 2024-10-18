@@ -154,7 +154,7 @@ if menu == "Archivo":
         st.write("Guardar archivo seleccionado.")
     elif archivo_opcion == "Cerrar":
         st.write("Cerrar archivo seleccionado.")
-    else:   
+      
 elif menu == "Editar":
     st.write("Has seleccionado la opción 'Editar'.")
     # Opciones específicas para 'Editar'
