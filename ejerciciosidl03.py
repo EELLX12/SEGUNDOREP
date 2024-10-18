@@ -18,6 +18,6 @@ serie = generar_serie(n)
 st.write(f"La serie generada para n={n} es: {serie}")
 
 lst = [10,20,30,40] 
-x = [0,1,2] 
+x = 1 
 lst.append(x) 
 st.write(lst) 
