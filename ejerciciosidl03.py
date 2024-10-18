@@ -62,7 +62,7 @@ with st.form(key='my_form'):
     for i in range(1, 11):
         num = st.number_input(f"Ingrese el número {i}:", key=f'num_{i}',  step=1)
         dieznumeros.append(num)
-submit_button = st.form_submit_button(label='Enviar')
+    submit_button = st.form_submit_button(label='Enviar')
 
 contar1=0
 contar2=0
