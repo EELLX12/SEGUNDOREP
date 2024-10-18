@@ -59,12 +59,10 @@ st.title("SESION 12 Estructura repetitiva")
 st.subheader("Ejercicio 1 : Calcular de 10 números la media, calcular cuantos son >10 =10 y <10 ")
 
 # Crear un formulario para ingresar los números
-dieznumeros = []
-for i in range(10):
-        num = st.number_input(f"Ingrese el número {i + 1}:", key=f"num_{i}")
-        dieznumeros.append(num)
-def calcular(dieznumeros):
-    
+
+
+def calcular(s):
+    dieznumeros = [87,45,97,10,10,25,87,-6,-3,0]
     contar1=0
     contar2=0
     contar3=0
@@ -79,7 +77,7 @@ def calcular(dieznumeros):
     media = np.mean(dieznumeros)
     return media,contar1, contar2, contar3       
 if st.button("Calcular"):
-    media,contar1, contar2, contar3 =calcular(dieznumeros)
+    media,contar1, contar2, contar3 =calcular()
     st.write(f"La media para 10 numeros es= {media} ")
     st.write(f"La cantidad de numeros mayores de 10 son = {contar1} ")
     st.write(f"La cantidad de numeros iguales de 10 son ={contar2} ")
