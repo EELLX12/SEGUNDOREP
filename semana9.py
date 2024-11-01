@@ -4,7 +4,7 @@ st.title("SESION 12 Ejercicio 1 : Calcular de 10 números la media, calcular cua
 dieznumeros = []
 with st.form(key='my_form'):
     for i in range(1, 11):
-        num = st.number_input(f"Ingrese el número {i}:", key=f'num_{i}',  step=1)
+        num = st.number_input(f"Ingrese el {i}° número :", key=f'num_{i}',  step=1)
         dieznumeros.append(num)
     submit_button = st.form_submit_button(label='Enviar')
 
