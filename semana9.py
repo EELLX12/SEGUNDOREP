@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-st.title("Calcular de 10 números la media, cuantos son >10 =10 y <10 ")
+#Calcular de 10 números la media, cuantos son >10 =10 y <10 "
 dieznumeros = []
 with st.form(key='my_form'):
     for i in range(1, 11):
