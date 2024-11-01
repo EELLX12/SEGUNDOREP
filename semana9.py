@@ -1,7 +1,6 @@
-st.title("SESION 12 Ejercicio 1 : Calcular de 10 números la media, calcular cuantos son >10 =10 y <10 ")
 import streamlit as st
 import numpy as np
-
+st.title("SESION 12 Ejercicio 1 : Calcular de 10 números la media, calcular cuantos son >10 =10 y <10 ")
 dieznumeros = []
 with st.form(key='my_form'):
     for i in range(1, 11):
