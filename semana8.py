@@ -60,9 +60,10 @@ def main():
     if radio > 0:
         area = calcular_area(radio)
         perimetro = calcular_perimetro(radio)
-    
-    #monstrar el resultado
-    st.write(f"Area : {area:2f}")
-    st.write(f"Perimetro : {perimetro:2f}")
+        #monstrar el resultado
+        st.write(f"Area : {area:.2f}")
+        st.write(f"Perimetro : {perimetro:.2f}")
+    else:
+        st.write("Por favor ingrese de nuevo")
 if __name__ == "__main__":
     main()
