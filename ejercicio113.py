@@ -14,8 +14,8 @@ def main():
         
         if numero == 0:
             break
-        
-        numeros.append(numero)
+        else:
+            numeros.append(numero)
     else:
         st.write("No se ingresaron números.")
 
