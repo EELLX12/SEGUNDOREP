@@ -9,11 +9,12 @@ def main():
     # Lista para almacenar los números ingresados
     numeros = []  
 
-    if True:
+    while True:
         numero = st.number_input("Ingresa un número (0 para salir)", step=1.0)
         
         if numero == 0:
            st.write("salir.")
+           break
         else:
             numeros.append(numero)
     else:
