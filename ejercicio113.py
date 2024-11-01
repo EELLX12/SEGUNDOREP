@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 
 # Inicializa la lista en el estado de la sesión si no existe
 if 'numeros' not in st.session_state:
@@ -19,7 +20,9 @@ if st.button("Agregar número"):
 
 # Calcular la suma total si hay números
 if st.session_state.numeros:
-    suma_total = sum(st.session_state.numeros)
-    st.write(f"La suma de los números ingresados es: {suma_total}")
+    suma = sum(st.session_state.numeros)
+    media = np.mean(st.session_state.numeros)
+    st.write(f"La suma de los números ingresados es: {suma}")
+    st.write(f"La media de los números ingresados es: {media}")
 else:
     st.write("No se ingresaron números.")
