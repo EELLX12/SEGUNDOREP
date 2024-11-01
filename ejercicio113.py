@@ -13,7 +13,7 @@ def main():
         numero = st.number_input("Ingresa un número (0 para salir)", step=1.0)
         
         if numero == 0:
-            break
+           st.write("salir.")
         else:
             numeros.append(numero)
     else:
