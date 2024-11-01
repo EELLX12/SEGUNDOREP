@@ -1,35 +1,23 @@
 import streamlit as st
-import numpy as np
 
-st.title("Ejercicio 1 de 13 : ingresar numeros hasta que se introdusca cero, imprimir suma y media ")
-
+# Inicializamos una lista en el estado de la sesión si no existe
 if 'numeros' not in st.session_state:
     st.session_state.numeros = []
 
-def main():
-    
-    
-    # Lista para almacenar los números ingresados
-    numeros = []  
+st.title("Suma de Números")
 
-    while True:
-        numero = st.number_input("Ingresa un número (0 para salir)", step=1.0)
-        
-        if numero == 0:
+# Bucle para ingresar números hasta que se ingrese cero
+while True:
+    numero = st.number_input("Ingresa un número (0 para salir)", step=1.0)
+
+    if numero == 0:
         break
 
     st.session_state.numeros.append(numero)
 
 # Calcular la suma total
 if st.session_state.numeros:
-    suma = sum(st.session_state.numeros)
-    media =np.mean(st.session_state.numeros)
-    st.write(f"La suma de los números ingresados es: {suma}")
-    st.write(f"La media de los números ingresados es: {media}")
+    suma_total = sum(st.session_state.numeros)
+    st.write(f"La suma de los números ingresados es: {suma_total}")
 else:
     st.write("No se ingresaron números.")
-       
-
-if __name__ == "__main__":
-    main()
-
