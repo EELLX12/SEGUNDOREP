@@ -1,8 +1,8 @@
 import streamlit as st
 import numpy as np
 #Ejercicio 3:  CREA UN MENU
-st.title("SESION 13 Estructura repetitiva")
-st.subheader("Ejercicio 3 : GENERA UN MENU ")
+
+st.title("Ejercicio 13.3 : GENERA UN MENU ")
 # Crear un menú en la barra lateral
 menu1 = st.sidebar.selectbox("Menús", ["Archivo", "Editar", "Ver", "Salir"])
 
